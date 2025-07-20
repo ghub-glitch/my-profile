@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+/* Load downloaded fonts */
+@font-face {
+font-family: 'Pacifico';
+src: url('fonts/Pacifico-Regular.ttf') format('truetype');
+}
+
+@font-face {
+font-family: 'Quicksand';
+src: url('fonts/Quicksand-Regular.ttf') format('truetype');
+}
+
+* {
+box-sizing: border-box;
+}
+
+body {
+padding: 5px;
+background-color: #f4f4f4;
+font-family: 'Quicksand', sans-serif;
+}
+
+/* Header styling with Pacifico font and text-shadow */
+h2 {
+font-family: 'Pacifico', cursive;
+font-size: 24px;
+color: #333;
+text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Create columns */
+.column {
+float: left;
+width: 33.33%;
+height: 500px;
+padding: 20px;
+border: 2px solid #fff;
+background-color: #fcf8ec;
+box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+margin-bottom: 20px;
+position: relative; /* Enable positioning inside this box */
+}
+
+/* Image styling */
+.column img {
+width: 100%;
+border-radius: 4px;
+}
+
+/* Paragraphs with Quicksand */
+.column p {
+font-family: 'Quicksand', sans-serif;
+font-size: 14px;
+}
+
+/* Label positioned top-right */
+.label {
+position: absolute;
+top: 10px;
+right: 10px;
+background: #ff6f61;
+color: white;
+padding: 4px 8px;
+font-size: 12px;
+border-radius: 3px;
+font-family: 'Quicksand';
+}
+
+/* Responsive: 2 columns on medium screens */
+@media screen and (max-width: 992px) {
+.column {
+width: 50%;
+}
+}
+
+/* Responsive: stack on small screens */
+@media screen and (max-width: 600px) {
+.column {
+width: 100%;
+}
+}
+</style>
+</head>
+<body>
+
+<div class="row">
+
+<div class="column">
+<div class="label">Discover</div>
+<h2>China</h2>
+<img src="https://www.china-briefing.com/news/wp-content/uploads/2020/05/China%E2%80%99s-Tourism-Industry-Sees-Signs-of-Revival-Over-Labor-Day-Holiday-.jpg" alt="China">
+<p>China boasts a large number of wonderful attractions including antique sites and relics, imposing imperial palaces, delicate water towns, amazing natural wonders, and diversified folk customs.</p>
+</div>
+
+<div class="column">
+<div class="label">Relax</div>
+<h2>Sri Lanka</h2>
+<img src="https://www.planetware.com/wpimages/2020/01/sri-lanka-best-places-to-visit-colombo.jpg" alt="Sri Lanka">
+<p>Sri Lanka is an amazing travel destination offering a wide range of places to visit. This island presents visitors with an incredible array of environments to enjoy and experience.</p>
+</div>
+
+<div class="column">
+<div class="label">Adventure</div>
+<h2>Indonesia</h2>
+<img src="https://www.planetware.com/photos-large/INA/indonesia-beaches-of-bali.jpg" alt="Indonesia">
+<p>The Indonesian archipelago holds untold treasures in its diversity of cultures, landscapes, and cities. With nearly 13,500 islands, Indonesia offers an adventure for everyone.</p>
+</div>
+
+</div>
+
+</body>
+</html>
